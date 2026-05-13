@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Skeleton</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="pantalla">
+
+    <!-- INPUT NOMBRE -->
+    <input 
+        type="text" 
+        id="nombre"
+        class="nombre"
+        placeholder="TU NOMBRE"
+    >
+
+    <!-- INPUT EMAIL -->
+    <input 
+        type="email" 
+        id="email"
+        class="email"
+    >
+
+    <!-- INPUT PASSWORD -->
+    <input 
+        type="password" 
+        id="password"
+        class="password"
+    >
+
+    <!-- BOTÓN LOGIN -->
+    <button class="btn-login" onclick="login()"></button>
+
+    <!-- MENSAJE -->
+    <div id="mensaje"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
