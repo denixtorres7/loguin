@@ -1,14 +1,57 @@
-/* NOMBRE */
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+width:100vw;
+height:100vh;
+
+overflow:hidden;
+
+font-family:Arial,sans-serif;
+
+background:#ddd;
+
+}
+
+/* CONTENEDOR */
+
+.pantalla{
+
+position:relative;
+
+width:100vw;
+height:100vh;
+
+background-image:url("./imagen/fondo.jpg");
+
+background-size:contain;
+
+background-repeat:no-repeat;
+
+background-position:center center;
+
+}
+
+
+/* =======================
+NOMBRE
+======================= */
 
 .nombre{
 
 position:absolute;
 
-top:185px;
-left:515px;
+top:22%;
+left:50%;
 
-width:580px;
-height:45px;
+transform:translateX(-50%);
+
+width:37%;
+height:6%;
 
 background:transparent;
 
@@ -17,82 +60,122 @@ outline:none;
 
 text-align:center;
 
-font-size:28px;
+font-size:clamp(14px,2vw,34px);
+
 font-weight:900;
 
-color:black;
+color:white;
+
+text-transform:uppercase;
 
 }
 
 
-/* EMAIL */
+/* =======================
+EMAIL
+======================= */
 
 .email{
 
 position:absolute;
 
-top:442px;
-left:720px;
+top:44.5%;
+left:59%;
 
-width:560px;
-height:42px;
+transform:translateX(-50%);
+
+width:35%;
+height:5%;
 
 background:transparent;
 
 border:none;
 outline:none;
 
-font-size:22px;
-
 padding-left:10px;
 
-color:#222;
+font-size:clamp(14px,1.7vw,28px);
+
+color:#333;
 
 }
 
 
-/* PASSWORD */
+/* =======================
+PASSWORD
+======================= */
 
 .password{
 
 position:absolute;
 
-top:535px;
-left:720px;
+top:53%;
+left:59%;
 
-width:560px;
-height:42px;
+transform:translateX(-50%);
+
+width:35%;
+height:5%;
 
 background:transparent;
 
 border:none;
 outline:none;
 
-font-size:22px;
-
 padding-left:10px;
 
-color:#222;
+font-size:clamp(14px,1.7vw,28px);
+
+color:#333;
 
 }
 
 
-/* BOTON */
+/* =======================
+BOTON
+======================= */
 
 .btn-login{
 
 position:absolute;
 
-top:730px;
-left:620px;
+top:72%;
+left:50%;
 
-width:420px;
-height:150px;
+transform:translateX(-50%);
+
+width:25%;
+height:13%;
 
 background:transparent;
 
 border:none;
 
 cursor:pointer;
+
+}
+
+
+/* =======================
+MENSAJE
+======================= */
+
+#mensaje{
+
+position:absolute;
+
+bottom:2%;
+
+width:100%;
+
+text-align:center;
+
+font-size:clamp(14px,2vw,28px);
+
+font-weight:bold;
+
+color:#ff00ff;
+
+text-shadow:0 0 8px #ff00ff;
 
 }
