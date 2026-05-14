@@ -1,181 +1,140 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body{
-
-width:100vw;
-height:100vh;
-
-overflow:hidden;
-
-font-family:Arial,sans-serif;
-
-background:#ddd;
-
+html, body{
+    width:1600px;
+    height:900px;
+    overflow:hidden;
+    font-family:Arial, Helvetica, sans-serif;
+    background:transparent;
 }
-
-/* CONTENEDOR */
 
 .pantalla{
+    position:relative;
+    width:1600px;
+    height:900px;
 
-position:relative;
-
-width:100vw;
-height:100vh;
-
-background-image:url("./imagen/fondo.jpg");
-
-background-size:contain;
-
-background-repeat:no-repeat;
-
-background-position:center center;
-
+    background-image:url("./imagen/fondo.jpg");
+    background-size:1600px 900px;
+    background-position:top left;
+    background-repeat:no-repeat;
 }
 
+/* GUÍAS VISUALES */
+.guia{
+    position:absolute;
+    background:red;
+    color:white;
+    padding:6px 10px;
+    font-size:18px;
+    font-weight:bold;
+    z-index:9999;
+}
 
-/* =======================
-NOMBRE
-======================= */
+.guiaNombre{
+    top:255px;
+    left:720px;
+}
 
+.guiaEmail{
+    top:370px;
+    left:675px;
+}
+
+.guiaPassword{
+    top:450px;
+    left:675px;
+}
+
+/* NOMBRE */
 .nombre{
+    position:absolute;
+    top:73px;
+    left:400px;
 
-position:absolute;
+    width:450px;
+    height:55px;
 
-top:22%;
-left:50%;
+    background:rgba(220,235,255,.65);
+    border:2px dashed red;
+    outline:none;
 
-transform:translateX(-50%);
-
-width:37%;
-height:6%;
-
-background:transparent;
-
-border:none;
-outline:none;
-
-text-align:center;
-
-font-size:clamp(14px,2vw,34px);
-
-font-weight:900;
-
-color:white;
-
-text-transform:uppercase;
-
+    text-align:center;
+    font-size:34px;
+    font-weight:900;
+    color:black;
+    text-transform:uppercase;
 }
 
-
-/* =======================
-EMAIL
-======================= */
-
+/* EMAIL */
 .email{
+    position:absolute;
+    top:390px;
+    left:670px;
 
-position:absolute;
+    width:475px;
+    height:48px;
 
-top:44.5%;
-left:59%;
+    background:rgba(220,235,255,.75);
+    border:2px dashed blue;
+    outline:none;
 
-transform:translateX(-50%);
-
-width:35%;
-height:5%;
-
-background:transparent;
-
-border:none;
-outline:none;
-
-padding-left:10px;
-
-font-size:clamp(14px,1.7vw,28px);
-
-color:#333;
-
+    padding-left:15px;
+    font-size:28px;
+    font-weight:700;
+    color:black;
 }
 
-
-/* =======================
-PASSWORD
-======================= */
-
+/* PASSWORD */
 .password{
+    position:absolute;
+    top:470px;
+    left:670px;
 
-position:absolute;
+    width:475px;
+    height:48px;
 
-top:53%;
-left:59%;
+    background:rgba(220,235,255,.75);
+    border:2px dashed lime;
+    outline:none;
 
-transform:translateX(-50%);
-
-width:35%;
-height:5%;
-
-background:transparent;
-
-border:none;
-outline:none;
-
-padding-left:10px;
-
-font-size:clamp(14px,1.7vw,28px);
-
-color:#333;
-
+    padding-left:15px;
+    font-size:28px;
+    font-weight:700;
+    color:black;
 }
 
+.nombre::placeholder,
+.email::placeholder,
+.password::placeholder{
+    color:#777;
+}
 
-/* =======================
-BOTON
-======================= */
-
+/* BOTÓN LOGIN */
 .btn-login{
+    position:absolute;
+    top:620px;
+    left:610px;
 
-position:absolute;
+    width:400px;
+    height:125px;
 
-top:72%;
-left:50%;
-
-transform:translateX(-50%);
-
-width:25%;
-height:13%;
-
-background:transparent;
-
-border:none;
-
-cursor:pointer;
-
+    background:rgba(255,0,255,.2);
+    border:3px solid magenta;
+    cursor:pointer;
 }
 
-
-/* =======================
-MENSAJE
-======================= */
-
+/* MENSAJE */
 #mensaje{
+    position:absolute;
+    bottom:25px;
+    width:1600px;
 
-position:absolute;
-
-bottom:2%;
-
-width:100%;
-
-text-align:center;
-
-font-size:clamp(14px,2vw,28px);
-
-font-weight:bold;
-
-color:#ff00ff;
-
-text-shadow:0 0 8px #ff00ff;
-
+    text-align:center;
+    font-size:30px;
+    font-weight:900;
+    color:#ff00ff;
 }
