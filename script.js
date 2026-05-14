@@ -19,11 +19,17 @@ function login(){
 
     ){
 
+        // GUARDAR NOMBRE
+        localStorage.setItem(
+            "nombreUsuario",
+            nombre
+        );
+
         document.getElementById("mensaje").innerHTML =
         "LOGIN CORRECTO";
 
-        // REDIRECCIÓN
-        // window.location.href = "home.html";
+        // SI QUIERES CAMBIAR DE PÁGINA
+        // window.location.href="home.html";
 
     }else{
 
