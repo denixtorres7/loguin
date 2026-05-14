@@ -72,13 +72,13 @@ html, body{
 /* EMAIL */
 .email{
     position:absolute;
-    top:390px;
-    left:670px;
+    top:168px;
+    left:193px;
 
-    width:475px;
-    height:48px;
+    width:335px;
+    height:73px;
 
-    background:rgba(220,235,255,.75);
+    background:rgba(220,235,255,.65);
     border:2px dashed blue;
     outline:none;
 
@@ -91,13 +91,13 @@ html, body{
 /* PASSWORD */
 .password{
     position:absolute;
-    top:470px;
-    left:670px;
+    top:268px;
+    left:193px;
 
-    width:475px;
-    height:48px;
+    width:335px;
+    height:73px;
 
-    background:rgba(220,235,255,.75);
+    background:rgba(220,235,255,.65);
     border:2px dashed lime;
     outline:none;
 
@@ -105,6 +105,22 @@ html, body{
     font-size:28px;
     font-weight:700;
     color:black;
+}
+
+/* GUÍAS */
+.guiaNombre{
+    top:45px;
+    left:520px;
+}
+
+.guiaEmail{
+    top:140px;
+    left:195px;
+}
+
+.guiaPassword{
+    top:240px;
+    left:195px;
 }
 
 .nombre::placeholder,
