@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:transparent;
+    overflow:hidden;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#nombreMostrado{
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:32px;
+    font-weight:900;
+    color:#ff00ff;
+    text-transform:uppercase;
+}
+</style>
+</head>
+
+<body>
+
+<div id="nombreMostrado"></div>
+
+<script>
+const nombre = localStorage.getItem("nombreUsuario");
+
+document.getElementById("nombreMostrado").innerHTML =
+    nombre ? nombre : "INVITADO";
+</script>
+
+</body>
+</html>
