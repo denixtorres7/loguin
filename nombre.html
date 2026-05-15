@@ -1,39 +1,30 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-
 <meta charset="UTF-8">
 
 <style>
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-html,body{
-margin:20px;
-padding:0;
-overflow:hidden;
-background:transparent;
+html, body{
+    margin:0;
+    padding:0;
+    background:transparent;
+    overflow:hidden;
+    width:450px;
+    height:70px;
 }
 
 #nombreMostrado{
-
-font-family:'Poppins',sans-serif;
-
-font-size:38px;
-
-font-weight:700;
-
-color:white;
-
-text-transform:uppercase;
-
-text-align:left;
-
+    font-family:'Poppins', sans-serif;
+    font-size:38px;
+    font-weight:700;
+    color:white;
+    text-transform:uppercase;
+    text-align:left;
+    line-height:70px;
 }
-
 </style>
-
 </head>
 
 <body>
@@ -41,21 +32,15 @@ text-align:left;
 <div id="nombreMostrado"></div>
 
 <script>
+function mostrarNombre(){
+    const nombre = localStorage.getItem("nombreUsuario");
+    document.getElementById("nombreMostrado").innerHTML = nombre || "";
+}
 
-const nombre=
-localStorage.getItem(
-"nombreUsuario"
-);
+mostrarNombre();
 
-document
-.getElementById(
-"nombreMostrado"
-)
-innerHTML=
-nombre || "";
-
+setInterval(mostrarNombre, 500);
 </script>
 
 </body>
-
 </html>
