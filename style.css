@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-*{ margin:0; padding:0; box-sizing:border-box; }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
 html,body{
 width:948px;
 height:265px;
 overflow:hidden;
-font-family:'Poppins',sans-serif;
 background:transparent;
+font-family:'Poppins',sans-serif;
 }
 
 .pantalla{
@@ -17,72 +21,93 @@ height:265px;
 background:CYAN;
 }
 
-/* NOMBRE: franja rosa */
+/* TU NOMBRE - centrado en la franja rosa */
 .nombre{
 position:absolute;
-top:0px;
-left:0px;
-width:430px;
-height:60px;
+top:5px;
+left:230px;
+width:490px;
+height:55px;
+
 background:transparent;
 border:none;
 outline:none;
+
 font-family:'Poppins',sans-serif;
 font-weight:700;
-font-size:32px;
+font-size:30px;
+
 text-align:center;
 color:white;
 caret-color:white;
 text-transform:uppercase;
 }
 
-/* EMAIL: óvalo superior */
+.nombre::placeholder{
+color:rgba(255,255,255,.75);
+}
+
+/* EMAIL - solo dentro del óvalo derecho */
 .email{
 position:absolute;
 top:105px;
-left:150px;
+left:315px;
 width:500px;
-height:45px;
+height:42px;
+
 background:transparent;
 border:none;
 outline:none;
+
 font-family:'Poppins',sans-serif;
 font-weight:700;
-font-size:28px;
+font-size:22px;
+
 text-align:left;
 color:#222;
+caret-color:#222;
 padding-left:15px;
 }
 
-/* PASSWORD: óvalo inferior */
+.email::placeholder{
+color:#999;
+}
+
+/* PASSWORD - solo dentro del óvalo derecho */
 .password{
 position:absolute;
 top:178px;
-left:150px;
+left:415px;
 width:400px;
-height:45px;
+height:42px;
+
 background:transparent;
 border:none;
 outline:none;
+
 font-family:'Poppins',sans-serif;
 font-weight:700;
-font-size:28px;
+font-size:22px;
+
 text-align:left;
 color:#222;
+caret-color:#222;
 padding-left:15px;
 }
 
-.nombre::placeholder{ color:rgba(255,255,255,.55); }
-.email::placeholder,
-.password::placeholder{ color:#999; }
+.password::placeholder{
+color:#999;
+}
 
+/* BOTÓN CHECK */
 .btn-login{
 position:absolute;
-top:105px;
-left:850px;
-width:80px;
-height:80px;
-background:RED;
+top:100px;
+left:845px;
+width:90px;
+height:90px;
+
+background:transparent;
 border:none;
 cursor:pointer;
 }
@@ -90,9 +115,10 @@ cursor:pointer;
 #mensaje{
 position:absolute;
 bottom:0;
-width:100%;
-text-align:CENTER;
-font-size:16px;
+left:0;
+width:948px;
+text-align:center;
+font-size:14px;
 font-weight:700;
 color:#ff00ff;
 }
