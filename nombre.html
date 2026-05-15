@@ -9,20 +9,20 @@
 html,body{
 margin:0;
 padding:0;
-width:500px;
-height:80px;
+width:420px;
+height:70px;
 overflow:hidden;
 background:transparent;
 }
 
 #nombreMostrado{
 font-family:'Poppins',sans-serif;
-font-size:32px;
+font-size:28px;
 font-weight:700;
 color:white;
 text-transform:uppercase;
+line-height:70px;
 text-align:left;
-line-height:80px;
 }
 </style>
 </head>
@@ -33,16 +33,12 @@ line-height:80px;
 
 <script>
 function mostrarNombre(){
-
-    const nombre = localStorage.getItem("nombreUsuario");
-
-    document.getElementById("nombreMostrado").innerHTML =
-    nombre ? nombre : "";
+const nombre = localStorage.getItem("nombreUsuario");
+document.getElementById("nombreMostrado").innerHTML = nombre || "";
 }
 
 mostrarNombre();
-
-setInterval(mostrarNombre, 300);
+setInterval(mostrarNombre,300);
 </script>
 
 </body>
