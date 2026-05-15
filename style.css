@@ -7,7 +7,7 @@ width:948px;
 height:265px;
 overflow:hidden;
 font-family:'Poppins',sans-serif;
-background:transparent;
+background:BLUE;
 }
 
 .pantalla{
@@ -48,7 +48,7 @@ border:none;
 outline:none;
 font-family:'Poppins',sans-serif;
 font-weight:700;
-font-size:22px;
+font-size:28px;
 text-align:left;
 color:#222;
 padding-left:15px;
@@ -66,7 +66,7 @@ border:none;
 outline:none;
 font-family:'Poppins',sans-serif;
 font-weight:700;
-font-size:22px;
+font-size:28px;
 text-align:left;
 color:#222;
 padding-left:15px;
