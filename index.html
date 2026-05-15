@@ -2,26 +2,48 @@
 <html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Login</title>
-<link rel="stylesheet" href="loguin.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+html,body{
+margin:0;
+padding:0;
+width:500px;
+height:80px;
+overflow:hidden;
+background:transparent;
+}
+
+#nombreMostrado{
+font-family:'Poppins',sans-serif;
+font-size:32px;
+font-weight:700;
+color:white;
+text-transform:uppercase;
+text-align:left;
+line-height:80px;
+}
+</style>
 </head>
 
 <body>
 
-<div class="pantalla">
+<div id="nombreMostrado"></div>
 
-<input type="text" id="nombre" class="nombre" placeholder="/TÚ NOMBRE">
+<script>
+function mostrarNombre(){
 
-<input type="email" id="email" class="email" placeholder="">
+    const nombre = localStorage.getItem("nombreUsuario");
 
-<input type="password" id="password" class="password" placeholder="">
+    document.getElementById("nombreMostrado").innerHTML =
+    nombre ? nombre : "";
+}
 
-<button class="btn-login" onclick="login()"></button>
+mostrarNombre();
 
-<div id="mensaje"></div>
+setInterval(mostrarNombre, 300);
+</script>
 
-</div>
-
-<script src="login.js"></script>
 </body>
 </html>
