@@ -100,16 +100,23 @@ color:#999;
 }
 
 /* BOTÓN CHECK */
+
 .btn-login{
+
 position:absolute;
+
 top:100px;
 left:845px;
+
 width:90px;
 height:90px;
 
-background:RED;
+background:transparent;
+
 border:none;
+
 cursor:pointer;
+
 }
 
 #mensaje{
