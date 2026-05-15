@@ -1,50 +1,18 @@
 function login(){
 
-const nombre=
-document.getElementById("nombre").value;
+    const nombre = document.getElementById("nombre").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
 
-const email=
-document.getElementById("email").value;
+    if(nombre !== "" && email !== "" && password !== ""){
 
-const password=
-document.getElementById("password").value;
+        localStorage.setItem("nombreUsuario", nombre);
 
+        document.getElementById("mensaje").innerHTML = "LOGIN CORRECTO";
 
-if(
+    }else{
 
-nombre!="" &&
-email!="" &&
-password!=""
+        document.getElementById("mensaje").innerHTML = "COMPLETE LOS CAMPOS";
 
-){
-
-localStorage.setItem(
-"nombreUsuario",
-nombre
-);
-
-
-document.getElementById(
-"mensaje"
-).innerHTML=
-
-"LOGIN CORRECTO";
-
-
-/* OPCIONAL REDIRECCION */
-
-// window.location.href="home.html";
-
-}
-
-else{
-
-document.getElementById(
-"mensaje"
-).innerHTML=
-
-"COMPLETE LOS CAMPOS";
-
-}
-
+    }
 }
