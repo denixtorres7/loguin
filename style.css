@@ -47,12 +47,12 @@ text-transform:uppercase;
 color:rgba(255,255,255,.75);
 }
 
-/* EMAIL - solo dentro del óvalo derecho */
+/* EMAIL - empieza DESPUÉS de la palabra E-MAIL */
 .email{
 position:absolute;
 top:105px;
 left:150px;
-width:500px;
+width:430px;
 height:42px;
 
 background:transparent;
@@ -66,19 +66,16 @@ font-size:22px;
 text-align:left;
 color:#222;
 caret-color:#222;
-padding-left:15px;
+
+padding-left:10px;
 }
 
-.email::placeholder{
-color:#999;
-}
-
-/* PASSWORD - solo dentro del óvalo derecho */
+/* PASSWORD - empieza DESPUÉS de la palabra CONTRASEÑA */
 .password{
 position:absolute;
 top:178px;
 left:150px;
-width:400px;
+width:430px;
 height:42px;
 
 background:transparent;
@@ -92,11 +89,8 @@ font-size:22px;
 text-align:left;
 color:#222;
 caret-color:#222;
-padding-left:15px;
-}
 
-.password::placeholder{
-color:#999;
+padding-left:10px;
 }
 
 /* BOTÓN CHECK */
