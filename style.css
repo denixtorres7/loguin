@@ -50,7 +50,7 @@ color:rgba(255,255,255,.75);
 /* EMAIL - empieza DESPUÉS de la palabra E-MAIL */
 .email{
 position:absolute;
-top:105px;
+top:305px;
 left:150px;
 width:430px;
 height:42px;
@@ -74,7 +74,7 @@ padding-left:10px;
 .password{
 position:absolute;
 top:178px;
-left:150px;
+left:410px;
 width:430px;
 height:42px;
 
