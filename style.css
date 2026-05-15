@@ -7,14 +7,14 @@ width:948px;
 height:265px;
 overflow:hidden;
 font-family:'Poppins',sans-serif;
-background:BLUE;
+background:transparent;
 }
 
 .pantalla{
 position:relative;
 width:948px;
 height:265px;
-background:transparent;
+background:BLUE;
 }
 
 /* NOMBRE: franja rosa */
