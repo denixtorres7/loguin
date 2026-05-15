@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Skeleton</title>
 
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Login</title>
+
+<link rel="stylesheet" href="loguin.css">
+
 </head>
 
 <body>
 
 <div class="pantalla">
 
-    <!-- GUIAS VISUALES -->
-
-<div class="guia guiaNombre">NOMBRE ↓</div>
-
-<input 
+<input
 type="text"
 id="nombre"
 class="nombre"
 placeholder="Nombre"
 >
-
-    <!-- INPUT NOMBRE -->
-    <input 
-        type="text" 
-        id="nombre"
-        class="nombre"
-        placeholder="TU NOMBRE"
-    >
-
-
-<div class="guia guiaEmail">EMAIL ↓</div>
 
 <input
 type="email"
@@ -42,15 +27,6 @@ class="email"
 placeholder="Email"
 >
 
-    <!-- INPUT EMAIL -->
-    <input 
-        type="email" 
-        id="email"
-        class="email"
-    >
-
-<div class="guia guiaPassword">PASSWORD ↓</div>
-
 <input
 type="password"
 id="password"
@@ -58,22 +34,16 @@ class="password"
 placeholder="Password"
 >
 
-    <!-- INPUT PASSWORD -->
-    <input 
-        type="password" 
-        id="password"
-        class="password"
-    >
+<button
+class="btn-login"
+onclick="login()">
+</button>
 
-    <!-- BOTÓN LOGIN -->
-    <button class="btn-login" onclick="login()"></button>
-
-    <!-- MENSAJE -->
-    <div id="mensaje"></div>
+<div id="mensaje"></div>
 
 </div>
 
-<script src="script.js"></script>
+<script src="login.js"></script>
 
 </body>
 </html>
