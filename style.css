@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{ margin:0; padding:0; box-sizing:border-box; }
 
 html,body{
 width:948px;
 height:265px;
 overflow:hidden;
-font-family:Arial,sans-serif;
-background:BLUE;
+font-family:'Poppins',sans-serif;
+background:transparent;
 }
 
 .pantalla{
@@ -21,162 +17,82 @@ height:265px;
 background:transparent;
 }
 
-/* NOMBRE */
-
+/* NOMBRE: franja rosa */
 .nombre{
-
 position:absolute;
-
 top:0px;
-left:300px;
-
-width:350px;
-height:55px;
-
+left:270px;
+width:430px;
+height:60px;
 background:transparent;
-
 border:none;
 outline:none;
-
 font-family:'Poppins',sans-serif;
-
 font-weight:700;
-
+font-size:32px;
 text-align:center;
-
-font-size:30px;
-
 color:white;
-
 caret-color:white;
-
 text-transform:uppercase;
-
 }
 
-
-/* EMAIL */
-
+/* EMAIL: óvalo superior */
 .email{
-
 position:absolute;
-
 top:105px;
-left:445px;
-
-width:340px;
-height:35px;
-
+left:315px;
+width:500px;
+height:45px;
 background:transparent;
-
 border:none;
 outline:none;
-
-padding-left:0px;
-
 font-family:'Poppins',sans-serif;
-
 font-weight:700;
-
 font-size:22px;
-
 text-align:left;
-
 color:#222;
-
+padding-left:15px;
 }
 
-
-/* PASSWORD */
-
+/* PASSWORD: óvalo inferior */
 .password{
-
 position:absolute;
-
-top:180px;
-left:445px;
-
-width:340px;
-height:35px;
-
+top:178px;
+left:415px;
+width:400px;
+height:45px;
 background:transparent;
-
 border:none;
 outline:none;
-
-padding-left:0px;
-
 font-family:'Poppins',sans-serif;
-
 font-weight:700;
-
 font-size:22px;
-
 text-align:left;
-
 color:#222;
-
+padding-left:15px;
 }
+
+.nombre::placeholder{ color:rgba(255,255,255,.55); }
+.email::placeholder,
+.password::placeholder{ color:#999; }
 
 .btn-login{
 position:absolute;
 top:105px;
-left:860px;
-width:70px;
-height:70px;
+left:850px;
+width:80px;
+height:80px;
 background:transparent;
 border:none;
 cursor:pointer;
 }
-
-
-/* PLACEHOLDERS */
-
-.nombre::placeholder,
-.email::placeholder,
-.password::placeholder{
-
-font-family:'Poppins',sans-serif;
-
-font-weight:700;
-
-color:#999;
-
-}
-
-/* BOTON CHECK */
-
-.btn-login{
-
-position:absolute;
-
-top:70px;
-left:860px;
-
-width:70px;
-height:70px;
-
-background:transparent;
-
-border:none;
-
-cursor:pointer;
-
-}
-
 
 #mensaje{
-
 position:absolute;
-
 bottom:0;
-
 width:100%;
-
 text-align:center;
-
 font-size:16px;
-
+font-weight:700;
 color:#ff00ff;
-
 }
