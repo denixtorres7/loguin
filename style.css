@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
 *{
 margin:0;
 padding:0;
@@ -8,101 +6,139 @@ box-sizing:border-box;
 
 html,body{
 width:948px;
-height:265px;
+height:378px;
 overflow:hidden;
+font-family:Arial,sans-serif;
 background:transparent;
-font-family:'Poppins',sans-serif;
 }
 
 .pantalla{
 position:relative;
 width:948px;
-height:265px;
+height:378px;
 background:transparent;
 }
 
-/* NOMBRE EN FRANJA ROSA */
+
+/* NOMBRE */
+
 .nombre{
 position:absolute;
-top:4px;
-left:230px;
-width:490px;
+top:0px;
+left:300px;
+width:350px;
 height:55px;
 background:transparent;
 border:none;
 outline:none;
-font-family:'Poppins',sans-serif;
-font-size:24px;
-font-weight:700;
 text-align:center;
+font-size:28px;
+font-weight:900;
 color:white;
 caret-color:white;
 text-transform:uppercase;
 }
 
-.nombre::placeholder{
-color:rgba(255,255,255,.75);
-}
-
-/* EMAIL SOLO DENTRO DEL ÓVALO */
 .email{
 position:absolute;
-top:105px;
-left:315px;
-width:500px;
-height:42px;
+top:120px;
+left:310px;
+width:340px;
+height:35px;
 background:transparent;
 border:none;
 outline:none;
-font-family:'Poppins',sans-serif;
-font-size:20px;
-font-weight:700;
-text-align:left;
-color:#111;
-caret-color:#111;
-padding-left:15px;
+padding-left:12px;
+font-size:25px;
+font-weight:900;
+color:#222;
 }
 
-/* CONTRASEÑA SOLO DENTRO DEL ÓVALO */
 .password{
 position:absolute;
-top:178px;
-left:415px;
-width:400px;
-height:42px;
+top:200px;
+left:410px;
+width:340px;
+height:35px;
 background:transparent;
 border:none;
 outline:none;
-font-family:'Poppins',sans-serif;
-font-size:20px;
-font-weight:700;
-text-align:left;
-color:#111;
-caret-color:#111;
-padding-left:15px;
+padding-left:12px;
+font-size:25px;
+font-weight:900;
+color:#222;
 }
 
-/* BOTÓN CHECK */
 .btn-login{
+
 position:absolute;
-top:100px;
-left:845px;
-width:90px;
-height:90px;
-background:transparent;
+
+top:320px;
+left:150px;
+
+width:160px;
+height:50px;
+
+background:black;
+
 border:none;
+border-radius:999px;
+
+color:white;
+
+font-family:'Poppins',sans-serif;
+
+font-size:27px;
+
+font-weight:900;
+
+letter-spacing:1px;
+
 cursor:pointer;
+
+box-shadow:
+0px 8px 0px #111,
+0px 12px 20px rgba(0,0,0,.35);
+
+z-index:999;
+
 }
+
+
+.btn-login:active{
+
+transform:translateY(5px);
+
+box-shadow:
+0px 3px 0px #111;
+
+}
+
+
+/* PLACEHOLDERS */
+
+.nombre::placeholder{
+color:rgba(255,255,255,.6);
+}
+
+.email::placeholder,
+.password::placeholder{
+color:#888;
+}
+
 
 #mensaje{
+
 position:absolute;
+
 bottom:0;
-left:0;
-width:948px;
-height:20px;
-font-family:'Poppins',sans-serif;
-font-size:14px;
-font-weight:700;
+
+width:100%;
+
 text-align:center;
+
+font-size:16px;
+
 color:#ff00ff;
+
 }
