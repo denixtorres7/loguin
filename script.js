@@ -1,25 +1,49 @@
-const campoNombre = document.getElementById("nombre");
-const campoEmail = document.getElementById("email");
-const campoPassword = document.getElementById("password");
-
-campoNombre.addEventListener("input", function(){
-    localStorage.setItem("nombreUsuario", campoNombre.value.trim());
-});
-
 function login(){
 
-    const nombre = campoNombre.value.trim();
-    const email = campoEmail.value.trim();
-    const password = campoPassword.value.trim();
+const nombre=
+document.getElementById("nombre").value;
 
-    if(nombre !== "" && email !== "" && password !== ""){
+const email=
+document.getElementById("email").value;
 
-        localStorage.setItem("nombreUsuario", nombre);
+const password=
+document.getElementById("password").value;
 
-        document.getElementById("mensaje").innerHTML = "LOGIN CORRECTO";
 
-    }else{
+if(
 
-        document.getElementById("mensaje").innerHTML = "COMPLETE LOS CAMPOS";
-    }
+nombre!="" &&
+email!="" &&
+password!=""
+
+){
+
+localStorage.setItem(
+"nombreUsuario",
+nombre
+);
+
+document.getElementById(
+"mensaje"
+).innerHTML=
+"LOGIN CORRECTO";
+
+
+setTimeout(()=>{
+
+window.location.href="nombre.html";
+
+},500);
+
+}
+
+else{
+
+document.getElementById(
+"mensaje"
+).innerHTML=
+"COMPLETE LOS CAMPOS";
+
+}
+
 }
