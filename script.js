@@ -28,8 +28,11 @@ document.getElementById(
 ).innerHTML=
 "LOGIN CORRECTO";
 
-},500);
+  setTimeout(()=>{
 
+window.location.href="nombre.html";
+
+},500);
 }
 
 else{
