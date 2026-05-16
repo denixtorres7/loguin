@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
+<title>Login</title>
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+<link rel="stylesheet" href="copia de style.css">
 
-html,body{
-margin:0;
-padding:0;
-width:500px;
-height:80px;
-overflow:hidden;
-background:transparent;
-}
-
-#nombreMostrado{
-font-family:'Poppins',sans-serif;
-font-size:32px;
-font-weight:700;
-color:white;
-text-transform:uppercase;
-text-align:left;
-line-height:80px;
-}
-</style>
 </head>
 
 <body>
 
-<div id="nombreMostrado"></div>
+<div class="pantalla">
 
-<script>
-function mostrarNombre(){
+<input
+type="text"
+id="nombre"
+class="nombre"
+placeholder="TU NOMBRE">
 
-    const nombre = localStorage.getItem("nombreUsuario");
+<input
+type="email"
+id="email"
+class="email"
+placeholder="E-MAIL">
 
-    document.getElementById("nombreMostrado").innerHTML =
-    nombre ? nombre : "";
-}
+<input
+type="password"
+id="password"
+class="password"
+placeholder="CONTRASEÑA">
 
-mostrarNombre();
+<button
+class="btn-login"
+onclick="login()">
+ENTRAR
+</button>
 
-setInterval(mostrarNombre, 300);
-</script>
+<div id="mensaje"></div>
+
+</div>
+
+<script src="copia de script.js"></script>
 
 </body>
 </html>
