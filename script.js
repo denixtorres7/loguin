@@ -32,7 +32,7 @@ document.getElementById(
 
 window.location.href="nombre.html";
 
-},500);
+},200);
 }
 
 else{
