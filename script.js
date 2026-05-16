@@ -31,7 +31,6 @@ document.getElementById(
 
 setTimeout(()=>{
 
-window.location.href="nombre.html";
 
 },500);
 
