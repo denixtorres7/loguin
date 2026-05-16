@@ -28,10 +28,6 @@ document.getElementById(
 ).innerHTML=
 "LOGIN CORRECTO";
 
-
-setTimeout(()=>{
-
-
 },500);
 
 }
